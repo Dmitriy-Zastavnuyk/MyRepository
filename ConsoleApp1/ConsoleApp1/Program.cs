@@ -11,11 +11,6 @@ namespace ConsoleApp1
     {
         static string ProcessInput(string s)
         {
-            //String[] substrings = s.Split('&');
-            //foreach (var substring in substrings)
-            //    Console.WriteLine(substring
-            // TODO Verify and validate the input 
-            // string as appropriate for your application.
             return s;
         }
         static void Main(string[] args)
@@ -55,12 +50,12 @@ namespace ConsoleApp1
         //        RegistryKey subKey1 = currentUserKey.CreateSubKey(uriSchemaName,true);
 
         //        RegistryKey subKey11 = subKey1.CreateSubKey("DefaultIcon", true);
-        //        subKey11.SetValue("(Default)", "C:\\Users\\Dima\\Documents\\Visual Studio 2017\\Projects\\TestApp\\TestApp\\bin\\Debug\\TeatApp.exe"+","+"1");
+        //        subKey11.SetValue("(Default)", "C:\\Users\\Dima\\MyRepository\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\ConsoleApp1.exe"+","+"1");
         //        RegistryKey subKey12 = subKey1.CreateSubKey("shell", true);
         //        RegistryKey subKey2 = subKey12.CreateSubKey("open", true);
 
         //        RegistryKey subKey3 = subKey2.CreateSubKey("command", true);
-        //        subKey3.SetValue("По умолчанию" , "C:\\Users\\Dima\\Documents\\Visual Studio 2017\\Projects\\TestApp\\TestApp\\bin\\Debug\\TestApp.exe" + "" + " \"%1\"");
+        //        subKey3.SetValue("По умолчанию" , "C:\\Users\\Dima\\MyRepository\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\ConsoleApp1.exe" + "" + " \"%1\"");
 
 
 
@@ -69,6 +64,6 @@ namespace ConsoleApp1
         //    {
         //        Console.WriteLine("Error" + ex.Message);
         //    }
-    //}
+        //}
     }
 }
