@@ -1,0 +1,69 @@
+﻿@model Test_ASP_NET_Application.Models.RegisterCustomerModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>REGISTRATION</h2>
+
+@{ using (Html.BeginForm())
+    {
+        <p>
+            @Html.LabelFor(m => m.Name)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.Name)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.SurName)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.SurName)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.CustomerSex, "SexTemplate")
+        </p>
+        <p>
+            @Html.EnumDropDownListFor(m => m.CustomerSex)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Login)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.Login)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Password)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.Password)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.ConfirmedPassword)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.ConfirmedPassword)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Email)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.Email)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.MobileNumber)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.MobileNumber)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.RegistrationConsent)
+        </p>
+        <p>
+            @Html.EditorFor(m => m.RegistrationConsent)
+        </p>
+        @Html.ValidationSummary()
+        <input type="submit" value="Register"/>  
+
+        }
+    }
+

@@ -1,0 +1,11 @@
+﻿@using Test_ASP_NET_Application.Models
+@model Sex
+
+<select id="Sex" name="Sex">
+    @foreach (Sex  item in Enum.GetValues(typeof(Sex)))
+	{
+        <option value="@item" @(Model==item? "selected=\"selected\"" : "")>
+            @item
+            </option>
+    }
+    </select>
